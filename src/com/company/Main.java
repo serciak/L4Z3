@@ -13,5 +13,12 @@ public class Main {
         System.out.println(drowningStack);
         drowningStack.push(121313232);
         System.out.println(drowningStack);
+        drowningStack.pop();
+        drowningStack.push(121313232);
+        drowningStack.push(121313232);
+        drowningStack.push(121313232);
+        drowningStack.push(121313232);
+        drowningStack.pop();
+        System.out.println(drowningStack);
     }
 }

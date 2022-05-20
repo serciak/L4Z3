@@ -35,11 +35,12 @@ public class DrowningStack<T> implements StackInterface<T> {
     @Override
     public T pop() throws EmptyStackException {
         if(isEmpty()) throw new EmptyStackException();
+        --topIndex;
         return list.remove(0);
     }
 
     @Override
-    public void push(T elem) throws FullStackException {
+    public void push(T elem) {
         if(isFull())
             list.remove(topIndex-1);
         else
